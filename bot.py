@@ -11,7 +11,7 @@ GUILD = "{BrittanyOrion}"
 # create an object that will control our discord bot
 client = discord.Client(intents=discord.Intents.default())
 
-openai.api_key = os.environ.get("API KEY")
+openai.api_key = os.environ.get("API_KEY")
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
 openai.ai_base = os.environ.get("API_BASE")
 
