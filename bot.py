@@ -43,6 +43,7 @@ async def on_message(message):
 				{"role": "user", "content": message.content}
 				]
 			)
+			print(response.choices[0].message.content)
 			await message.channel.send(response.choices[0].message.content)
 	except Exception as error:
 		print(error)
